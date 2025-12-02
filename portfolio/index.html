@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Interactive Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Portfolio</div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li class="nav-item"><a href="#performance" class="nav-link">Performance</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="typing-text">Hello, I'm</span>
+                        <span class="name-highlight">Mohamed Safwaan M I</span>
+                    </h1>
+                    <p class="hero-subtitle">AI & Data Science Student | Full Stack Developer</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="navigateTo('projects')">View My Work</button>
+                        <button class="btn btn-secondary" onclick="navigateTo('contact')">Get In Touch</button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-elements">
+                        <div class="float-item" style="--delay: 0s"><i class="fab fa-react"></i></div>
+                        <div class="float-item" style="--delay: 1s"><i class="fab fa-js"></i></div>
+                        <div class="float-item" style="--delay: 2s"><i class="fab fa-python"></i></div>
+                        <div class="float-item" style="--delay: 3s"><i class="fab fa-node-js"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Page -->
+        <section id="about" class="page">
+            <div class="container">
+                <h2 class="page-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>B.Tech AI & Data Science student at Sri Eshwar College of Engineering with CGPA 7.7. Passionate about building scalable applications and enhancing programming & data science expertise.</p>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-java"></i>
+                                <span>Java</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-database"></i>
+                                <span>MySQL</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-js"></i>
+                                <span>JavaScript</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-chart-bar"></i>
+                                <span>Data Science</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-html5"></i>
+                                <span>Web Dev</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Page -->
+        <section id="projects" class="page">
+            <div class="container">
+                <h2 class="page-title">My Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <button class="btn btn-small">View Demo</button>
+                                <button class="btn btn-small">Source Code</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Water Reminder App</h3>
+                            <p>Flask-based application with Base64 encoding, lightweight persistence, and scheduled notifications</p>
+                            <div class="project-tags">
+                                <span class="tag">Flask</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">Base64</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <button class="btn btn-small">View Demo</button>
+                                <button class="btn btn-small">Source Code</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Student Placement System</h3>
+                            <p>Full-stack Career Tracking System with role-based authentication</p>
+                            <div class="project-tags">
+                                <span class="tag">Thymeleaf</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">Spring Boot</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <button class="btn btn-small">View Demo</button>
+                                <button class="btn btn-small">Source Code</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Tamil Nadu Explore System</h3>
+                            <p>Interactive web application showcasing Tamil Nadu's culture, tourism, and heritage using vanilla web technologies</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Page -->
+        <section id="achievements" class="page">
+            <div class="container">
+                <h2 class="page-title">Achievements</h2>
+                <div class="achievements-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>C, Python & DS Programming Certifications</h3>
+                            <p class="timeline-date">2024</p>
+                            <p>Completed C Programming from SoloLearn, Python and Data Science Programming from Udemy</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Oracle Java Certification</h3>
+                            <p class="timeline-date">2023</p>
+                            <p>Completed Oracle Java certification demonstrating proficiency in Java programming</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Power BI & Data Science Certifications</h3>
+                            <p class="timeline-date">2022</p>
+                            <p>Completed certifications in Power BI, C, Python, and Data Science Programming</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Academic Excellence</h3>
+                            <p class="timeline-date">2021</p>
+                            <p>HSC: 92.6% and SSLC: 91.2% from Kumari Matriculation Higher Secondary School</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Performance Page -->
+        <section id="performance" class="page">
+            <div class="container">
+                <h2 class="page-title">Performance Metrics</h2>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-icon"><i class="fas fa-code"></i></div>
+                        <div class="metric-number" data-target="3">0</div>
+                        <div class="metric-label">Major Projects</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon"><i class="fas fa-users"></i></div>
+                        <div class="metric-number" data-target="70">0</div>
+                        <div class="metric-label">LeetCode Problems</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon"><i class="fas fa-clock"></i></div>
+                        <div class="metric-number" data-target="10">0</div>
+                        <div class="metric-label">CodeChef Problems</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon"><i class="fas fa-trophy"></i></div>
+                        <div class="metric-number" data-target="5">0</div>
+                        <div class="metric-label">Certifications</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon"><i class="fas fa-code"></i></div>
+                        <div class="metric-number" data-target="750">0</div>
+                        <div class="metric-label">Skillrack Problems</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section id="contact" class="page">
+            <div class="container">
+                <h2 class="page-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>mohamedsafwaan40@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9940342407</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Tamil Nadu, India</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <span>linkedin.com/in/mohamed-safwaan-m-i-a04347333</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <span>github.com/saffu2006</span>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        window.embeddedChatbotConfig = {
+            chatbotId: "R7h9RL77RqHdqsOBHSIO7",
+            domain: "www.chatbase.co"
+        }
+    </script>
+    <script src="https://www.chatbase.co/embed.min.js" chatbotId="R7h9RL77RqHdqsOBHSIO7" domain="www.chatbase.co" defer></script>
+</body>
+</html>
